@@ -1,2 +1,20 @@
 # CS360
-IMS android app for CS360 SNHU
+## IMS android app for CS360 SNHU
+
+### Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?
+This inventory management app features a user-friendly interface for managing inventories of all sizes.  This inventory app allows users to add items to the database along with their quantity. The app is a user interface for a light SQL database. It also allows users to update the quantity of items by either incrementing or decrementing the item total. Users can also delete items from the database. Users have the option to turn on SMS notifications. When items reach low quantities, the app will automatically send a notification alert.  
+
+### What screens and features were necessary to support user needs and produce a user-centered UI for the app? How did your UI designs keep users in mind? Why were your designs successful?
+The screens created for supporting the needs of the users with the login, inventory display, inventory configuration, and SMS permission screens. The login screen was in charge of processing users login information as well as creating accounts in the event. The inventory display screen displays the user with the data in a scrollable grid view. It also allows users to increase and decrease quantities, as well as adding and removing items. When the user goes to add an item, they will be brought to the inventory configuration screen. From here they can add as many items and their quantities as needed. Finally, accesses through the inventory display screen, users can enter the SMS permission screen. From here, they can choose to allow or deny SMS notifications for product approaching low quantities.
+
+### How did you approach the process of coding your app? What techniques or strategies did you use? How could those techniques or strategies be applied in the future?
+My approach for coding the app started with designing the UI. By defining all the layout through  its .XML data, I was able to easily line up the functionality. When coding the project, I worked from the database up to the user interface. For instance, I created database handlers for the user and inventory databases. Then I created intermediate classes that handled CRUD functionality, among other specialized functions. This technique will be used in the future to aid me with designing web and mobile applications that communicate with databases.
+
+### How did you test to ensure your code was functional? Why is this process important, and what did it reveal?
+I tested the code every step of the way. As soon as I added a feature to the application, I would run through the app to ensure that it was implemented properly and didn't cause any other problems. This process is important to ensure that the app is free from errors. The last thing you want to do is push code to your users that is infested with bugs. During my time developing the project I ran into countless issues, for instance whenever I accidentally pressed anywhere but a widget on the login screen, it would crash. I found the error to be an onClick setting in the login screen's XML file.
+
+### Consider the full app design and development process, from initial planning to finalization. Where did you have to innovate to overcome a challenge?
+I had innovated in many different places, but most specifically was with the inventory display screen. I opted to use a scrollable view, filled it with grid views. These grid views would possess text views and buttons for each item in the database. I implemented code to the project that would create a grid view for every item, and it worked perfectly.
+
+### In what specific component of your mobile app were you particularly successful in demonstrating your knowledge, skills, and experience?
+I think the inventory management screen was best at demonstrating my knowledge. It at this screen that I had to access the inventory database and add items, their quantities and reload the screen. I was specifically happy with how the screen was built to allow the user to enter multiple different items before exiting. Whenever the user is done entering items, they will simply press the back button.
